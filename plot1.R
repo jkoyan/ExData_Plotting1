@@ -10,8 +10,8 @@ createPlot1 <- function(workingdir="C:\\_R\\Exploratory Data Analysis\\Course Pr
     data <- data[which(l),]
     data$Global_active_power <- as.numeric(as.character(data$Global_active_power))
     #data
-    png(file = "plot1.png",width = 480, height = 480, bg = "transparent")
-    hist(data$Global_active_power,xlab="Gloabl active power (kilowatts)",main="Global Active Power",col="red")
+    png(file = "plot1.png",width = 480, height = 480, bg = "white")
+    hist(data$Global_active_power,xlab="Global active power (kilowatts)",main="Global Active Power",col="red")
     rect(1, 5, 3, 7, col = "white")
     dev.off()
     
